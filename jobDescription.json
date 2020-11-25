@@ -1,0 +1,25 @@
+[{
+  "position": "Software Developer",
+  "discription": "Analyze users' needs and then design, test, and develop software to meet those needs. Recommend software upgrades for customers' existing programs and systems. Design each piece of an application or system and plan how the pieces will work together.",
+  "id": "1"
+}, {
+  "position": "Full Stack",
+  "discription": "A full stack web developer is a person who can develop both client and server software. In addition to mastering HTML and CSS, he/she also knows how to: Program a browser (like using JavaScript, jQuery, Angular, or Vue) Program a server (like using PHP, ASP, Python, or Node)",
+  "id": "2"
+},{
+  "position": "Data Scientist",
+  "discription": "A Data Scientist is someone who takes care of compiling things in such a way that the Product can have the greatest advantage to the Business. A developer might not have such experience, he is concentrated into Building things, not Analyzing it.",
+  "id": "3"
+}, {
+  "position": "UIUX",
+  "discription": "A UI, UX, and front-end web developer is responsible for applying interactive and visual design principles on websites and web applications for a positive and cohesive user experience. These developers use HTML, CSS, and other design tools to achieve responsive designs.",
+  "id": "4"
+}, {
+  "position": "Project Manager",
+  "discription": "A project manager (PM) is responsible for leading an entire project through initiation, planning, execution, control, and completion. Project managers always work in a team. They are most often sociable and great team players. As a PM, you will need to adapt to different people, cultures, environments, and situations.",
+  "id": "5"
+},{
+  "position": "React developer",
+  "discription": "In a nutshell, a React developer designs and implements user-facing features for websites and applications using React. js. They are known as front-end developers, a sub-group of developers that manage everything that users see on their web browsers or applications.",
+  "id": "6"
+}]
