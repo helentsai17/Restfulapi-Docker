@@ -1,20 +1,25 @@
 <html>
 <head>
-  <title>Pokemon</title>
+  <title>Apply list</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
+  <script>
+    function apply(){
+      alert("application had send");
+    }
+  </script>
 
-  <div class="card-body">
-    <h3 class="card-title">jobDescription <br>
+  <div style="margin:5% 20%; border:solid; padding:3%; border-radius: 25px;">
+    <h3 class="card-title">Job title:
       <%= job[0].position %>
     </h3>
-    <p>
+    <p> job explanation: <br>
       <%= job[0].discription %>
     </p>
-
+      <button onclick="apply()" class="btn btn-info" href="#">click to apply</button>
   </div>
 
 </body>

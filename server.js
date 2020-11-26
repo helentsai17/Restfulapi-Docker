@@ -43,7 +43,7 @@ app.get('/listApplied/:id', function(req, res) {
   var id = req.params.id;
   appliedList = [];
   appliedJSON.forEach(company => {
-    console.log(company.id);
+    // console.log(company.id);
     if (company.id == req.params.id) {
       appliedList.push(company);
     }
@@ -71,15 +71,16 @@ app.get('/listApplied/:id/otherpostions', function(req, res) {
       appliList.push(company.otherposition);
     }
   });
-  console.log(appliList);
+  // console.log(appliList);
   positions = appliList[0];
   positions.forEach(position =>{
       positionName.push(jobDescription[position-1]);
 
   });
-  console.log(positionName);
+  // console.log(positionName);
   res.render("otherposition", {
-    otherposition: positionName
+    otherposition: positionName,
+    jobid : req.params.id
   });
 
 });
@@ -106,7 +107,7 @@ app.get('/listApplied/:id/otherpostions/:jid', function(req, res) {
 
 
   });
-  console.log(positionName);
+  // console.log(positionName);
   if (positionName[0] == undefined) {
     res.render("error", {
       msg: "the company dose not have this position"

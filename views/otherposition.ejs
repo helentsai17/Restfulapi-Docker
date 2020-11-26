@@ -1,33 +1,36 @@
 <html>
 
 <head>
-  <title>Pokemon</title>
+  <title>Apply list</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <div class="card-body">
-    <h3 class="card-title">Other postion</h3>
+  <div style="margin:5% 10%">
+    <h3 >Other postion</h3>
 
-    <table class="table ">
-      <thead class="thead-dark ">
+    <table class="table">
+      <thead class="thead-dark">
         <tr>
-          <th scope="col ">Id</th>
-          <th scope="col ">Position</th>
-          <th scope="col ">discription</th>
-
+          <th scope="col">Id</th>
+          <th scope="col">Position</th>
+          <th scope="col">discription</th>
+          <th scope="col">apply</th>
         </tr>
       </thead>
       <tbody>
+
         <% otherposition.forEach(function(job){ %>
         <tr>
           <td> <%= job.id %>
           </td>
           <td> <%= job.position %>
           </td>
-          <td> <%= job.discription %>
+          <td style="width:60%"> <%= job.discription %>
+          </td>
+          <td> <a href="/listApplied/<%= jobid %>/otherpostions/<%= job.id %>">see detail</a>
           </td>
         </tr>
         <% }) %>

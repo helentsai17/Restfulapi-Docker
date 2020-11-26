@@ -1,24 +1,27 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <script src="ejs.js"></script>
+  <title>Apply list</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-  <div>
-
+  <div style="margin:5% 10%">
+  <h2>Applied List</h2>
     <table class="table ">
       <thead class="thead-dark ">
         <tr>
-          <th scope="col ">Id</th>
-          <th scope="col ">Company</th>
-          <th scope="col ">Apply date</th>
-          <th scope="col ">position</th>
+          <th scope="col">Id</th>
+          <th scope="col">Company</th>
+          <th scope="col">Apply date</th>
+          <th scope="col">apply position</th>
+          <th scope="col">detail</th>
         </tr>
       </thead>
       <tbody>
-        <h2>company List</h2>
+
         <% title.forEach(function(company){ %>
         <tr>
           <td> <%= company.id %>
@@ -29,6 +32,9 @@
           </td>
           <td>
             <%= company.position %>
+          </td>
+          <td>
+            <a href="/listApplied/<%= company.id %>">detail</a>
           </td>
         </tr>
         <% }) %>

@@ -1,22 +1,23 @@
 <html>
 <head>
-  <title>Pokemon</title>
+  <title>Apply list</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-  <div class="card-body">
-    <h3 class="card-title">Applied company <br>
+  <div style="margin:5% 20%">
+    <h1>
       <%= company[0].name %>
-    </h3>
-    <h5>Applied date:
+    </h1>
+    <h5>Applied date: <br>
       <%= company[0].date %>
     </h5>
-    <h5>Applied position:
+    <h5>Applied position: <br>
       <%= company[0].position %>
     </h5>
+    <a class="btn btn-info" href="/listApplied/<%=company[0].id %>/otherpostions"> click to see other positon</a>
   </div>
 
 </body>
